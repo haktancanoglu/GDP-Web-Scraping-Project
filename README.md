@@ -1,62 +1,92 @@
-# GDP Web Scraping Analysis
+\# GDP Web Scraping \& Data Analysis
 
-## Overview
 
-This project extracts GDP data from a web page using Python web scraping techniques and performs data cleaning and analysis.
 
-The goal of this project is to collect GDP information, transform the raw data into an analysis-ready format, and identify the world's largest economies by GDP.
+\## Project Overview
 
-## Technologies Used
 
-- Python
-- Requests
-- BeautifulSoup
-- Pandas
-- Jupyter Notebook
 
-## Project Workflow
+This project demonstrates how to extract GDP data from an archived Wikipedia page using web scraping techniques with Python. The extracted data is cleaned, processed, and analyzed using Pandas.
 
-1. Send an HTTP request to the target webpage using Requests.
-2. Extract HTML content from the response.
-3. Parse the HTML structure using BeautifulSoup.
-4. Locate and extract GDP table data.
-5. Convert extracted data into a Pandas DataFrame.
-6. Clean and transform the dataset.
-7. Convert GDP values from Million USD to Billion USD.
-8. Sort countries by GDP and analyze the top economies.
 
-## Data Processing
 
-The project includes:
+The final output is a CSV file containing the top 10 largest economies ranked by nominal GDP (in billion USD).
 
-- Web scraping
-- HTML parsing
-- Data extraction
-- Data cleaning
-- Missing value handling
-- Data type conversion
-- Data sorting
 
-## Results
 
-The analysis identifies the countries with the highest GDP values.
+\## Technologies Used
 
-Top economies include:
 
-- United States
-- China
-- Japan
-- Germany
-- India
 
-## Files
+\- Python
 
-- `GDP_Web_Scraping_Analysis.ipynb`  
-  Jupyter Notebook containing the complete analysis workflow.
+\- Requests
 
-- `GDP_analysis.csv`  
-  Cleaned GDP dataset generated from the analysis.
+\- BeautifulSoup4
 
-## Conclusion
+\- Pandas
 
-This project demonstrates a complete data analysis workflow starting from web data extraction and ending with a structured dataset ready for analysis.
+\- Jupyter Notebook
+
+
+
+\## Project Workflow
+
+
+
+1\. Send an HTTP request to the archived Wikipedia page.
+
+2\. Parse the HTML using BeautifulSoup.
+
+3\. Extract the GDP table.
+
+4\. Clean and preprocess the data.
+
+5\. Convert GDP values to numeric format.
+
+6\. Remove missing values.
+
+7\. Sort countries by GDP.
+
+8\. Export the top 10 largest economies as a CSV file.
+
+
+
+\## Project Files
+
+
+
+\- `GDP\_Web\_Scraping\_Analysis\_v2.ipynb` – Main Jupyter Notebook containing the complete analysis.
+
+\- `largest\_economies\_v2.csv` – Output CSV file containing the top 10 largest economies.
+
+\- `README.md` – Project documentation.
+
+
+
+\## Data Source
+
+
+
+Archived Wikipedia page:
+
+
+
+https://web.archive.org/web/20230902185326/https://en.wikipedia.org/wiki/List\_of\_countries\_by\_GDP\_(nominal)
+
+
+
+\## Output
+
+
+
+The project generates a CSV file containing the world's top 10 largest economies by nominal GDP (in billion USD).
+
+
+
+\## Author
+
+
+
+Haktan
+
